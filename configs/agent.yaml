@@ -1,0 +1,22 @@
+agent:
+  name: EduMind Agent Enterprise
+  version: 2.0
+  modules:
+    - intent_router
+    - planner
+    - retriever
+    - reranker
+    - generator
+    - verifier
+    - exporter
+
+rag:
+  chunk_size: 500
+  overlap: 80
+  top_k: 12
+  rerank_top_k: 5
+
+guardrails:
+  pii_filter: true
+  low_confidence_fallback: true
+  hallucination_warning: true

@@ -1,0 +1,8 @@
+evaluation:
+  dataset_size: 200
+  metrics:
+    - answer_faithfulness
+    - context_precision
+    - citation_coverage
+    - hallucination_warning_rate
+    - latency_p95

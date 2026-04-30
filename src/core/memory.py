@@ -1,0 +1,9 @@
+class Memory:
+    def __init__(self):
+        self.history = []
+
+    def add(self, role, content):
+        self.history.append({"role": role, "content": content})
+
+    def recent(self, n=5):
+        return self.history[-n:]
