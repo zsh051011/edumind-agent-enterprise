@@ -22,6 +22,7 @@ with st.sidebar:
     st.write("Generator")
     st.write("Verifier")
     st.write("Exporter")
+    
 
 question = st.text_input("输入课程问题", "监督学习、无监督学习和强化学习有什么区别？")
 uploaded = st.file_uploader("上传课程资料", type=["pdf", "pptx", "docx", "txt"], accept_multiple_files=True)
